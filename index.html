@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+
+  <!-- DaisyUI and TailwindCSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/6c45b74f82.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            button_color: '#ABEF5F',
+            'btn_background': 'rgb(171, 239, 95)',
+            'footer_background': '#1C1C1C',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .manrope_font {
+      font-family: "Manrope", sans-serif
+    }
+
+    #Discuss_background {
+      background-image: linear-gradient(to bottom, rgba(242, 242, 242, 0.53), rgba(242, 242, 242, 0.53)), url('assets/bg.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    
+  </style>
+
+</head>
+
+<body class="manrope_font">
+  <header class="bg-gradient-to-b from-[#f2f2f2] to-white mb-20">
+    <!-- nav section -->
+    <nav class=" container mx-auto items-center py-5">
+      <div class="navbar justify-between flex">
+        <div class="navbar-start lg:w-[35%] gap-2">
+          <i class="fa-solid fa-arrow-right bg-button_color -rotate-45 p-2  rounded-full ">
+          </i>
+          <a class=" text-3xl font-extrabold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-base font-extrabold"><a>Home</a></li>
+            <li class="text-base text-gray-600"><a>Service</a></li>
+            <li class="text-base text-gray-600"><a>Portfolio</a></li>
+            <li class="text-base text-gray-600"><a> Blogs</a></li>
+            <li class="text-base text-gray-600"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex navbar-end  hidden lg:flex gap-2">
+          <div class="space-x-3 flex">
+            <i class="fa-solid  fa-magnifying-glass text-gray-500 text-xl bg-white rounded-[100%] py-2 px-3"></i>
+            <i class="fa-solid fa-cart-shopping  text-gray-500 text-xl bg-white rounded-[100%] py-2 px-3"></i>
+          </div>
+          <div class="flex">
+            <a class="btn text-xl font-bold bg-button_color rounded-full">Book Consult <i
+                class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-2  rounded-full"></i></a>
+          </div>
+
+        </div>
+
+        <!--icon section -->
+        <div class="block lg:hidden  bg-white rounded-full py-2 px-3.5 border border-gray-200">
+          <i class="fa-solid fa-bars text-xl text-gray-400"></i>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+</body>
+
+</html>
